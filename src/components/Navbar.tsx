@@ -10,7 +10,7 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Solutions", href: "#solutions" },
   { name: "Process", href: "#process" },
-  
+
   { name: "Why TCR", href: "#whytcr" },
   { name: "Contact", href: "#contact" },
 ];
@@ -67,11 +67,10 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
             ? "bg-[#05070e]/85 backdrop-blur-xl border-b border-slate-800/60 py-4 shadow-2xl shadow-black/40"
             : "bg-transparent py-6"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
@@ -105,11 +104,10 @@ export default function Navbar() {
                     key={link.name}
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className={`relative px-3.5 py-1.5 text-xs xl:text-sm font-medium transition-colors duration-300 rounded-full ${
-                      isActive
+                    className={`relative px-3.5 py-1.5 text-xs xl:text-sm font-medium transition-colors duration-300 rounded-full ${isActive
                         ? "text-cyan-300 font-semibold"
                         : "text-slate-300 hover:text-white"
-                    }`}
+                      }`}
                   >
                     {isActive && (
                       <motion.span
@@ -176,11 +174,10 @@ export default function Navbar() {
                       key={link.name}
                       href={link.href}
                       onClick={(e) => handleNavClick(e, link.href)}
-                      className={`flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium transition-colors ${
-                        isActive
+                      className={`flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium transition-colors ${isActive
                           ? "bg-cyan-500/10 text-cyan-400 border border-cyan-500/20"
                           : "text-slate-300 hover:bg-slate-900 hover:text-white"
-                      }`}
+                        }`}
                     >
                       <span>{link.name}</span>
                       <ArrowUpRight className="w-4 h-4 opacity-50" />

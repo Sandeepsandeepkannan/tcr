@@ -52,9 +52,9 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#030408] text-slate-400 border-t border-slate-800/80 pt-16 pb-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-slate-800/80">
-          
+
           {/* Company Brand Column */}
           <div className="lg:col-span-4 space-y-6">
             <a href="#home" onClick={(e) => handleNavClick(e, "#home")} className="flex items-center gap-3">
@@ -146,9 +146,9 @@ export default function Footer() {
               Get in Touch
             </h4>
             <div className="space-y-2 text-xs text-slate-400">
-              <p>Email: <span className="text-slate-200">hello@tcrtechnology.com</span></p>
-              <p>Phone: <span className="text-slate-200">+91 93450 53806</span></p>
-              <p>Locations: <span className="text-slate-200">Silicon Valley • New York • London</span></p>
+              <p>Email: <span className="text-slate-200">tcrtechnology@gmail.com</span></p>
+              <p>Phone: <span className="text-slate-200">+91 9345053806</span></p>
+              <p>Locations: <span className="text-slate-200">Chennai , Urapakkam</span></p>
               <div className="pt-2">
                 <a
                   href="#contact"
@@ -166,7 +166,7 @@ export default function Footer() {
         {/* Bottom copyright & scroll-top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
           <p>© {new Date().getFullYear()} TCR Technology. All rights reserved.</p>
-          
+
           <button
             onClick={scrollToTop}
             className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
