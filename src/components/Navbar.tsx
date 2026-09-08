@@ -81,8 +81,8 @@ export default function Navbar() {
               className="flex items-center gap-3 group cursor-pointer"
             >
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 via-sky-600 to-indigo-600 p-[1px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-all duration-300">
-                <div className="w-full h-full bg-[#070a14] rounded-[11px] flex items-center justify-center">
-                  <Cpu className="w-5 h-5 text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
+                <div className="w-full h-full bg-[#070a14] rounded-xl flex items-center justify-center">
+                 <img src="/logo.jpeg" alt="" />
                 </div>
               </div>
               <div className="flex flex-col">
